@@ -304,3 +304,7 @@ h1 { font-size: clamp(2.6rem, 6vw, 4rem); line-height: 1.08; margin-top: .65rem;
 a:focus-visible, button:focus-visible { outline: 2px solid #176f53; outline-offset: 4px; }
 @media (max-width: 720px) { .hero-visual { min-height: 180px; } .main-nav { background: #f5faf6ee; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .card { transition: none; } }
+
+/* Kompakte Klassenstufen in einer Reihe */
+.card ul[aria-label="Klassenstufe"] { flex-wrap: nowrap; gap: .25rem; overflow-x: auto; margin-top: .55rem; }
+.card ul[aria-label="Klassenstufe"] li { flex: 0 0 auto; padding: .2rem .38rem; font-size: .78rem; line-height: 1.4; white-space: nowrap; border-radius: .35rem; }
